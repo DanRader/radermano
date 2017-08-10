@@ -1,0 +1,81 @@
+$dm-blue: #3161AD;
+$dm-gold: #B5986B;
+$dm-serif: "gastromond", serif;
+$dm-sans: "proxima-nova", sans;
+
+body {
+  background-color: $dm-blue;
+  margin: 0;
+}
+
+nav {
+  margin: 20px;
+}
+
+svg#mark {
+  max-width: 126px;
+  display: block;
+}
+
+svg#type {
+  transform-origin: center;
+  transform: rotate(360deg);
+  transition: 8s;
+}
+
+svg#menu {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.the-question{
+  background-color: white;
+  padding: 5%;
+  margin-top: -6vh;
+  margin-left: 5vh;
+  padding-top: 54%;
+  padding-bottom: 12%;
+    & h1 {
+      position: relative;
+      font-size: 58px;
+      line-height: 65px;
+      color: $dm-blue;
+      font-family: $dm-serif;
+      font-weight: 100;
+      margin: 0;
+      max-width: 280px;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -2vh;
+        left: -15vw;
+        height: 282px;
+        width: 89vw;
+        border: 1px solid #B5986B;
+
+      }
+      &::after {
+        content: "Dearest Maggie";
+        font-family: $dm-sans;
+        position: absolute;
+        top: -117px;
+        left: -10px;
+        padding: 10px;
+        background-color: white;
+        font-size: 17px;
+      }
+    }
+}
+
+.the-answer {
+    & a {
+      font-family: $dm-serif;
+      color: white;
+      font-weight: 100;
+      font-size: 44px;
+      text-decoration: none;
+      display: inline-block;
+    }
+}

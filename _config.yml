@@ -1,0 +1,8 @@
+---
+title: radermano
+timezone: America/New_York
+collections:
+  uploads:
+    title: Uploads
+    output: true
+permalink: pretty
